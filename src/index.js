@@ -4,7 +4,7 @@ import cn from 'classnames'
 
 import Style from './styles.module.css'
 
-export const Button = ({size, color, round, light, className, children, ...props}) => {
+const Button = ({size, color, round, light, className, children, ...props}) => {
 
   const sizeClass =   size === "sm" ? Style.sm : 
                       size === "md" ? Style.md :
@@ -28,3 +28,5 @@ Button.propTypes = {
   round: PropTypes.bool,
   light: PropTypes.bool,
 }
+
+export default Button
